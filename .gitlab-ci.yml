@@ -17,6 +17,8 @@ pages:
     - xelatex master.tex
     - xelatex master.tex
     - xelatex master.tex
+    - makeindex master.idx
+    - xelatex master.tex
     - mkdir public
     - mv master.pdf ./public/songbook_rf.pdf
   artifacts:
