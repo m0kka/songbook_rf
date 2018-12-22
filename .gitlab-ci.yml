@@ -1,0 +1,24 @@
+image: jpbernius/xelatex
+
+stages:
+    - build
+
+pages:
+  stage: build
+  script:
+    - cp ./fonts/* /usr/local/share/fonts/.
+    - fc-cache -fv
+    - mkdir ~/texmf
+    - git clone https://gitlab.com/mokka/cmtex.git
+    - mv ./cmtex/tex ~/texmf/
+    - ls ~/texmf/tex/latex/cmtex
+    - texhash
+    - rm -f master.pdf
+    - xelatex master.tex
+    - xelatex master.tex
+    - xelatex master.tex
+    - mkdir public
+    - mv master.pdf ./public/songbook_rf.pdf
+  artifacts:
+    paths:
+      - public

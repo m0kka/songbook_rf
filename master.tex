@@ -1,0 +1,196 @@
+\documentclass[sans, english]{songbook}
+
+\usepackage{etoolbox}
+
+\makeatletter
+\def\@idxitem{\par\addvspace{10\p@ \@plus 5\p@ \@minus 3\p@}\hangindent 40\p@}
+\def\subitem{\par\hangindent 40\p@ \hspace*{20\p@}}
+\def\subsubitem{\par\hangindent 40\p@ \hspace*{30\p@}}
+\def\indexspace{}
+\patchcmd\theindex{\indexname}{\indexname\vspace{12pt}}{}{}
+\makeatother
+
+\begin{document}
+ \frontmatter
+ {\begingroup% Words in their Hands
+  \drop = 3\baselineskip
+  \centering
+  \vspace*{4cm}\null
+  \vspace*{\drop}
+  {\fontsize{45}{55}\selectfont THE BEN COOPER SONG COLLECTION}\\[2cm]
+  {\Large\itshape A collection of Ben Cooper's (Radical Face/Electric President} Works\\[1cm]
+  \vfill
+  {\Large Michael (Mokka)}\\
+  \vspace*{\drop}
+  {\scshape 2018}\par
+  \vspace*{\drop}
+ \endgroup}
+
+ \pagenumbering{gobble}
+ 
+ \maketoc
+ \newpage
+ \vspace*{1cm}
+ 
+ \chapter*{Preface}
+ 
+ \begin{spacing}{1.5}
+ \fontsize{14}{16}\selectfont
+  This is a collection of songs written and released by Ben Cooper, better known under his Alias ``Radical Face'' or his work as a part of ``Electric President''. These transcriptions are not ``true to record'' but have been adapted for personal play, more precisely playing in an acoustic setup. Images and illustrations from thelazyeye\footnote{\url{http://www.thelazyeye.net}}.\par There is no guarantee for accuracy for any of the songs transcribed within this collection. The author of this collection does not own (or claim to own) any of the songs in this work, all rights are held by the songs original authors. For personal and non-commercial use only.
+ \end{spacing}
+ 
+ \mainmatter
+ \booksec{Ben Cooper}{Unreleased Recordings}
+ 
+ \input{songs/life_and_times,the.tex}
+ \newpage
+ 
+ \booksec{Electric President}{Anything For Progress}
+ 
+ \booksecentry{Electric President}{Not Given Lightly}
+ 
+ \booksecentry{Electric President}{A Number Of Small Things}
+ 
+ \booksecentry{Electric President}{S/T}
+ 
+ \input{songs/good_morning_hypocrite.tex}
+ \newpage
+ \input{songs/grand_machine_no_12.tex}
+ \newpage
+ \input{songs/we_were_never_built_to_last.tex}
+ \newpage
+ 
+ \booksecentry{Electric President}{Sleep Well}
+ 
+ \input{songs/its_an_ugly_life.tex}
+ \newpage
+ 
+ \booksecentry{Electric President}{The Violent Blue}
+ 
+ \input{songs/safe_and_sound.tex}
+ \newpage
+ \input{songs/all_the_distant_ships.tex}
+ \newpage
+ 
+ \booksec{Patients}{Volume 1}
+ 
+ \input{songs/tall_tale_no_5.tex}
+ \newpage
+ 
+ \booksec{Unkle Stiltskin}{Unkle Stiltskin}
+ 
+ \input{songs/nightly_parade,the.tex}
+ \newpage
+ \input{songs/hope_in_a_can.tex}
+ \newpage
+ \input{songs/choking_on_metaphors.tex}
+ \newpage
+ \input{songs/life-like_sun.tex}
+ \newpage
+ 
+ \booksec{Radical Face}{The Junkyard Chandelier}
+ 
+ \input{songs/martyr.tex}
+ \newpage
+ \input{songs/chewing_bottles.tex}
+ \newpage
+ \input{songs/burning_bridges.tex}
+ \newpage
+ 
+ \booksecentry{Radical Face}{Ghost}
+ 
+ \input{songs/welcome_home_son.tex}
+ \newpage
+ \input{songs/glory.tex}
+ \newpage
+ \input{songs/wrapped_in_piano_strings.tex}
+ \newpage
+ \input{songs/along_the_road.tex}
+ \newpage
+ 
+ \booksecentry{Radical Face}{The Bastards}
+ 
+ \input{songs/baptisms.tex}
+ \newpage
+ \input{songs/servants_and_kings.tex}
+ \newpage
+ \input{songs/all_is_well_(its_only_blood).tex}
+ \newpage
+ \input{songs/all_is_well_(goodbye_goodbye).tex}
+ \newpage
+ \input{songs/second_family_portrait.tex}
+ \newpage
+ \input{songs/were_on_our_way.tex}
+ \newpage
+ \input{songs/small_hands.tex}
+ \newpage
+ \input{songs/nightclothes.tex}
+ \newpage
+ 
+ \booksecentry{Radical Face}{The Family Tree: The Roots}
+ 
+ \input{songs/severus_and_stone.tex}
+ \newpage
+ \input{songs/ghost_towns.tex}
+ \newpage
+ \input{songs/kin.tex}
+ \newpage
+ \input{songs/dead_waltz,the.tex}
+ \newpage
+ \input{songs/always_gold.tex}
+ \newpage
+ \input{songs/mountains.tex}
+ \newpage
+ 
+ \booksecentry{Radical Face}{The Family Tree: The Branches}
+ 
+ \input{songs/holy_branches.tex}
+ \newpage
+ \input{songs/mute,the.tex}
+ \newpage
+ \input{songs/reminders.tex}
+ \newpage
+ \input{songs/summer_skeletons.tex}
+ \newpage
+ \input{songs/from_the_mouth_of_an_injured_head.tex}
+ \newpage
+ 
+ \booksecentry{Radical Face}{The Family Tree: The Leaves}
+ 
+ \input{songs/rivers_in_the_dust.tex}
+ \newpage
+ \input{songs/everything_costs.tex}
+ \newpage
+ \input{songs/ship_in_port,the.tex}
+ \newpage
+ \input{songs/bad_blood.tex}
+ \newpage
+ 
+ \booksecentry{Radical Face}{Touch The Sky EP}
+ 
+ \input{songs/a_little_hell.tex}
+ \newpage
+ \input{songs/deserters_song,the.tex}
+ \newpage
+ 
+ \booksecentry{Radical Face}{SunnMoonnEclippse}
+ 
+ \booksecentry{Radical Face}{Covers, Vol.1: ``Lady Covers''}
+ 
+ \booksecentry{Radical Face}{Various Albums}
+  
+ \input{songs/bishops_song.tex}
+ \newpage
+ \input{songs/home.tex}
+ \newpage
+ \input{songs/if_you_come_back_to_haunt_me.tex}
+ \newpage
+ 
+ \booksec{Radical Face vs. Phalex Sledgehammer}{Crooked Teeth}
+ 
+ \booksecentry{Radical Face vs. Phalex Sledgehammer}{Robbing The Grave EP}
+ 
+ \booksecentry{Radical Face vs. Phalex Sledgehammer}{Typecast}
+
+ \printindex
+\end{document}
