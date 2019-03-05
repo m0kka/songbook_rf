@@ -110,7 +110,16 @@ Grand Total: 156
 - Shaped Like Hands
 - Undead Anthem
 
-## Radical Face (73)
+## Radical Face (79)
+
+### Therapy (6)
+
+- Doubt
+- Hard of Hearing
+- Personal Giants
+- Guilt
+- Better Days
+- Dead Ends
 
 ### The Bastards (11)
 
