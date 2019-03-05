@@ -63,7 +63,7 @@ Grand Total: 156
 - Bright Mouths
 - We Will Talk Through Walls
 - Graves And The Infinite Arm
-- Ether
+- ~~Ether~~
 - Robophobia
 - Lullaby
 - All The Bones
