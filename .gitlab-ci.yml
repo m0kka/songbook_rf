@@ -14,11 +14,11 @@ pages:
     - ls ~/texmf/tex/latex/cmtex
     - texhash
     - rm -f master.pdf
-    - xelatex master.tex
-    - xelatex master.tex
-    - xelatex master.tex
-    - makeindex master.idx
-    - xelatex master.tex
+#    - xelatex master.tex
+#    - xelatex master.tex
+#    - xelatex master.tex
+#    - makeindex master.idx
+#    - xelatex master.tex
     - mkdir public
     - mkdir public/songs
     - mv master.pdf ./public/songbook_rf.pdf
