@@ -21,7 +21,7 @@ pages:
 #    - xelatex master.tex
     - mkdir public
     - mkdir public/songs
-    - mv master.pdf ./public/songbook_rf.pdf
+#    - mv master.pdf ./public/songbook_rf.pdf
     - chmod +x ./build_all.sh
     - ./build_all.sh
   artifacts:
