@@ -1,5 +1,5 @@
 #!/bin/sh
-a_head="\t\t<a href='songs/"
+a_head="\t\t<a target='_blank' href='songs/"
 a_mid=".pdf'>"
 a_tail="</a><br/>\n"
 
