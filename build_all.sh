@@ -1,7 +1,7 @@
 #!/bin/sh
-a_head="\t\t<a target='_blank' href='songs/"
+a_head="\t\t\t<li><a target='_blank' href='songs/"
 a_mid=".pdf'>"
-a_tail="</a><br/>\n"
+a_tail="</a></li><br/>\n"
 
 cat index_h.html > public/index.html
 
@@ -13,7 +13,7 @@ do
     xelatex temp.tex
     xelatex temp.tex
     mv temp.pdf ../public/songs/${f%%.*}.pdf
-    echo $a_head${f%%.*}$a_mid$f$a_tail >> ../public/index.html
+    echo $a_head${f%%.*}$a_mid${f%%.*}$a_tail >> ../public/index.html
 done
 
 cd ..
