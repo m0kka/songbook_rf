@@ -1,7 +1,7 @@
 #!/bin/sh
 a_head="\t\t\t<li><a target='_blank' href='songs/"
 a_mid=".pdf'>"
-a_tail="</a></li><br/>\n"
+a_tail="</a></li>\n"
 
 cat index_h.html > public/index.html
 
