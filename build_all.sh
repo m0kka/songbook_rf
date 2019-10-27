@@ -8,11 +8,11 @@ cat index_h.html > public/index.html
 cd songs
 for f in *.tex
 do
-#    cat ../header.tex $f ../footer.tex > temp.tex
-#    xelatex temp.tex
-#    xelatex temp.tex
-#    xelatex temp.tex
-#    mv temp.pdf ../public/songs/${f%%.*}.pdf
+    cat ../header.tex $f ../footer.tex > temp.tex
+    xelatex temp.tex
+    xelatex temp.tex
+    xelatex temp.tex
+    mv temp.pdf ../public/songs/${f%%.*}.pdf
     echo $a_head${f%%.*}$a_mid$f$a_tail >> ../public/index.html
 done
 
