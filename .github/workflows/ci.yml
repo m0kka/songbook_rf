@@ -18,8 +18,8 @@ jobs:
           sudo apt-get install texlive-xetex
       - name: Set up fonts
         run: |
-          cp ./fonts/* /usr/local/share/fonts/.
-          fc-cache -fv
+          sudo cp ./fonts/* /usr/local/share/fonts/.
+          sudo fc-cache -fv
       - name: Set up cmtex
         uses: actions/checkout@v3
         with:
