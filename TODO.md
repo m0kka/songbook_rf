@@ -13,7 +13,7 @@ Complete Entries are marked by
 
 - ~~Song #3~~
 
-Grand Total: 156
+Grand Total: 161
 
 ## Ben Cooper (5)
 
@@ -110,7 +110,15 @@ Grand Total: 156
 - Shaped Like Hands
 - Undead Anthem
 
-## Radical Face (79)
+## Radical Face (84)
+
+### Hidden Hollow Vol. One (5)
+
+- The Missing Road
+- Sunlight
+- More Clay Than Stone (Still On Our Way)
+- The River With No Name
+- Under the Same Sun
 
 ### Therapy (6)
 
