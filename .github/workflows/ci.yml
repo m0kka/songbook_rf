@@ -20,12 +20,13 @@ jobs:
         run: |
           sudo cp ./fonts/* /usr/local/share/fonts/.
           sudo fc-cache -fv
-      - name: Set up cmtex
+      - name: Clone cmtex
         uses: actions/checkout@v3
         with:
           repository: m0kka/cmtex
           path: ./cmtex
-      - run: |
+      - name: Set up cmtex
+        run: |
           mkdir ~/texmf
           mv ./cmtex/tex ~/texmf/
           ls -l ~/texmf/tex/latex/cmtex
