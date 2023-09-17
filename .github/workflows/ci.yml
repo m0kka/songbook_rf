@@ -1,0 +1,72 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+      - name: Install XeLaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install texlive-xetex
+      - name: Set up fonts
+        run: |
+          cp ./fonts/* /usr/local/share/fonts/.
+          fc-cache -fv
+      - name: Set up cmtex
+        uses: actions/checkout@v3
+        with:
+          repository: m0kka/cmtex
+      - run: |
+          mkdir ~/texmf
+          mv ./cmtex/tex ~/texmf/
+          ls -l ~/texmf/tex/latex/cmtex
+          sudo texhash ~/texmf
+      - name: Build master.pdf
+        run: |
+          rm -f master.pdf
+          xelatex master.tex
+          xelatex master.tex
+          xelatex master.tex
+          makeindex master.idx
+          xelatex master.tex
+      - name: Move generated pdf to pages dir
+        run: |
+          mkdir _site
+          mkdir _site/songs
+          mv master.pdf ./_site/songbook_rf.pdf
+      - name: Generate individual song pdfs
+        run: |
+          chmod +x ./build_all.sh
+          ./build_all.sh
+      - name: Fix permissions for pages upload
+        run: |
+          chmod -c -R +rX "_site/" | while read line; do
+            echo "::warning title=Invalid file permissions automatically fixed::$line"
+          done
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v2
+
+  deploy:
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Github Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
